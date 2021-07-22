@@ -26,4 +26,4 @@ jobs:
       env:
         CI: 'true'
       with:
-        args: npm test
+        args: npm install && npm test
