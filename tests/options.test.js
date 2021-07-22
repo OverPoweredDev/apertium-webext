@@ -99,7 +99,7 @@ async function getExtensionID(browser) {
 
 async function loadExtension() {
     browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: [
             `--disable-extensions-except=${extensionPath}`,
             `--load-extension=${extensionPath}`
